@@ -187,7 +187,9 @@ dependencies = [
     { name = "jupyter" },
     { name = "matplotlib" },
     { name = "numpy" },
+    { name = "openpyxl" },
     { name = "pandas" },
+    { name = "pyprojroot" },
     { name = "scikit-learn" },
     { name = "scipy" },
     { name = "statsmodels" },
@@ -203,7 +205,9 @@ requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "numpy", specifier = ">=2.4.2" },
+    { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pandas", specifier = ">=3.0.1" },
+    { name = "pyprojroot", specifier = ">=0.3.0" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
     { name = "scipy", specifier = ">=1.17.1" },
     { name = "statsmodels", specifier = ">=0.14.6" },
@@ -571,6 +575,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/2b/e1/4e1821a395dad14f0359af4ee103c26aa56ced215e63fde3d269c29b4d00/econml-0.16.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:421e71ff2b6d3cbad5f9cf2e48d204a97e5deeeab8095bf6fe07649a7321821b", size = 2292653, upload-time = "2025-07-10T15:06:59.656Z" },
     { url = "https://files.pythonhosted.org/packages/1d/9f/42d98c38d6dbabf085afb867c7cf3ce75f230e575402cc4431b1d92c660f/econml-0.16.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f3174cc888c1a7f98174756541d82ea0e95be668c376dd3e8810e82dc9732da2", size = 5367880, upload-time = "2025-07-10T15:07:01.364Z" },
     { url = "https://files.pythonhosted.org/packages/e4/28/14277d521b62e3fd3f658ef4dbd0157d959ce9a5449cf85e7e1bc7786183/econml-0.16.0-cp313-cp313-win_amd64.whl", hash = "sha256:90101abdf8767d1481826db30a888f647ae3031addd298bbbb30f3c535cbc274", size = 2268088, upload-time = "2025-07-10T15:07:02.926Z" },
+]
+
+[[package]]
+name = "et-xmlfile"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d3/38/af70d7ab1ae9d4da450eeec1fa3918940a5fafb9055e934af8d6eb0c2313/et_xmlfile-2.0.0.tar.gz", hash = "sha256:dab3f4764309081ce75662649be815c4c9081e88f0837825f90fd28317d4da54", size = 17234, upload-time = "2024-10-25T17:25:40.039Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl", hash = "sha256:7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa", size = 18059, upload-time = "2024-10-25T17:25:39.051Z" },
 ]
 
 [[package]]
@@ -1523,6 +1536,18 @@ wheels = [
 ]
 
 [[package]]
+name = "openpyxl"
+version = "3.1.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "et-xmlfile" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3d/f9/88d94a75de065ea32619465d2f77b29a0469500e99012523b91cc4141cd1/openpyxl-3.1.5.tar.gz", hash = "sha256:cf0e3cf56142039133628b5acffe8ef0c12bc902d2aadd3e0fe5878dc08d1050", size = 186464, upload-time = "2024-06-28T14:03:44.161Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl", hash = "sha256:5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2", size = 250910, upload-time = "2024-06-28T14:03:41.161Z" },
+]
+
+[[package]]
 name = "osqp"
 version = "1.1.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1837,6 +1862,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f3/91/9c6ee907786a473bf81c5f53cf703ba0957b23ab84c264080fb5a450416f/pyparsing-3.3.2.tar.gz", hash = "sha256:c777f4d763f140633dcb6d8a3eda953bf7a214dc4eff598413c070bcdc117cbc", size = 6851574, upload-time = "2026-01-21T03:57:59.36Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl", hash = "sha256:850ba148bd908d7e2411587e247a1e4f0327839c40e2e5e6d05a007ecc69911d", size = 122781, upload-time = "2026-01-21T03:57:55.912Z" },
+]
+
+[[package]]
+name = "pyprojroot"
+version = "0.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ec/7f/d04044efe4acc4185db1174209fadac33cc21c015ed0d6bef8884c9fa808/pyprojroot-0.3.0.tar.gz", hash = "sha256:109705bb790968704958efcfc5ccce85d8e3dafa054897cc81371fcbbf56cb10", size = 6287, upload-time = "2023-03-13T05:39:30.318Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/53/9b/eef01392be945c0fe86a8d084ba9188b1e2b22af037d7109b9f40a962cd0/pyprojroot-0.3.0-py3-none-any.whl", hash = "sha256:c426b51b17ab4f4d4f95b479cf5b6c22df59bb58fbd4f01b37a6977d29b99888", size = 7558, upload-time = "2023-03-13T05:39:28.707Z" },
 ]
 
 [[package]]
